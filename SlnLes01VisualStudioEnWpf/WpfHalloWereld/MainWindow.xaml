@@ -7,14 +7,18 @@
         mc:Ignorable="d"
         Title="WPF Hallo Werld" Height="190" Width="550">
     <Grid Background="#FFF9EFD5" Margin="0,0,0,1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="71*"/>
+            <ColumnDefinition Width="204*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="0*"/>
             <RowDefinition Height="0*"/>
             <RowDefinition Height="Auto" MinHeight="173.04"/>
         </Grid.RowDefinitions>
-        <TextBlock x:Name="txtHello" Text="Hallo! Hoe is je naam ? " Margin="40,40,0,0" FontSize="16" HorizontalAlignment="Left" Padding="10,5" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="160" Grid.Row="2"><Run Language="fr-be" /></TextBlock>
-        <TextBox x:Name="inpNaam" Text="" Margin="40,0,0,0" Padding="5" Width="285" HorizontalAlignment="Left" TextWrapping="Wrap"  VerticalAlignment="Center" Height="31" Grid.Row="2"/>
-        <Button x:Name="btnSayHello" Content="OK" HorizontalAlignment="Left" Padding="10,5" Margin="345,0,0,0" VerticalAlignment="Center" Height="31" Width="58" FontFamily="Calibri" FontSize="16" Foreground="Blue" Click="BtnSayHello_Click" Grid.Row="2"/>
-        <Button Content="HERSTEL" HorizontalAlignment="Left" Margin="420,0,0,0" Padding="10,5" VerticalAlignment="Center" Height="31" Width="84" Grid.Row="2"/>
+        <TextBlock x:Name="txtHello" Margin="40,40,0,0" FontSize="16" HorizontalAlignment="Left" Padding="10,5" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="251" Grid.Row="2" Grid.ColumnSpan="2"><Run Text="Hallo! Hoe is je "/><Run Text="naam?"/></TextBlock>
+        <TextBox x:Name="inpNaam" Text="" Margin="40,0,0,0" Padding="5" Width="285" HorizontalAlignment="Left" TextWrapping="Wrap"  VerticalAlignment="Center" Height="31" Grid.Row="2" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnSayHello" Content="OK" HorizontalAlignment="Left" Padding="10,5" Margin="203,0,0,0" VerticalAlignment="Center" Height="31" Width="58" FontFamily="Calibri" FontSize="16" Foreground="Blue" Click="btnSayHello_Click" Grid.Row="2" Grid.Column="1"/>
+        <Button x:Name="btnHerstel" Content="HERSTEL" HorizontalAlignment="Left" Margin="278,0,0,0" Padding="10,5" VerticalAlignment="Center" Height="31" Width="84" Grid.Row="2" Click="btnHerstel_Click" Grid.Column="1"/>
     </Grid>
 </Window>

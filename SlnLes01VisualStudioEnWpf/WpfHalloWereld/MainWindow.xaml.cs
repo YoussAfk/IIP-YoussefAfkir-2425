@@ -18,20 +18,15 @@ namespace WpfHalloWereld
             InitializeComponent();
         }
 
-        private void BtnOk_Click(object sender, RoutedEventArgs e)
-        {
-            txtHello.Text = "Hallo " + txtNaam.Text;
-        }
-
-        private void BtnReset_Click(object sender, RoutedEventArgs e)
+        private void btnHerstel_Click(object sender, RoutedEventArgs e)
         {
             txtHello.Text = "Hoe is je naam?";
-            txtNaam.Text = "";
+            inpNaam.Text = "";
         }
 
-        private void BtnSayHello_Click(object sender, RoutedEventArgs e)
+        private void btnSayHello_Click(object sender, RoutedEventArgs e)
         {
-
+            txtHello.Text = "Hallo " + inpNaam.Text;
         }
     }
 }
