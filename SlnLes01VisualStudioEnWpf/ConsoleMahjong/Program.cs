@@ -24,7 +24,7 @@ namespace les_1_opgave
             Console.WriteLine("om de steen te tonen...");
             Console.ReadKey(true);
 
-            // utf-8 karakterset
+            // utf-8 
             //color
             Console.OutputEncoding = Encoding.UTF8;
             Console.BackgroundColor = ConsoleColor.White;
