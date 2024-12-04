@@ -1,0 +1,35 @@
+﻿<Window x:Class="WpfChat.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfChat"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#FF8383D1">
+        <Button Content="Button" HorizontalAlignment="Left" Margin="371,309,0,0" VerticalAlignment="Top" Height="31" Width="130" Click="btnVerzenden_click"/>
+        <TextBlock x:Name="tekstBox" Background="White" HorizontalAlignment="Left" Margin="62,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="184" Width="440" RenderTransformOrigin="0.5,0.5" Foreground="#FFB51E1E">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.128"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBox x:Name="txtNaam" HorizontalAlignment="Left" Margin="61,54,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="445" RenderTransformOrigin="0.5,0.5" Height="45" TextChanged="text_block_naam__TextChanged">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.315"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBlock x:Name="chatVenster" Background="White" HorizontalAlignment="Left" Margin="571,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="282" Width="206"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="-55,175,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
