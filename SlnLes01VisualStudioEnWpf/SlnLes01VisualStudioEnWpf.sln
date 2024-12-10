@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAbonnement", "Consol
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abonnement", "Abonnement\Abonnement.csproj", "{BD84C6E4-33D7-4437-A437-E3F67FA29C6F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BmiCalculator", "BmiCalculator\BmiCalculator.csproj", "{C43421CF-28E7-476B-B2E3-63F256EFE41D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{BD84C6E4-33D7-4437-A437-E3F67FA29C6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD84C6E4-33D7-4437-A437-E3F67FA29C6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD84C6E4-33D7-4437-A437-E3F67FA29C6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C43421CF-28E7-476B-B2E3-63F256EFE41D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C43421CF-28E7-476B-B2E3-63F256EFE41D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C43421CF-28E7-476B-B2E3-63F256EFE41D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C43421CF-28E7-476B-B2E3-63F256EFE41D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

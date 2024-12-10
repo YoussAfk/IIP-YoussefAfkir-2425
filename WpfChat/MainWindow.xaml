@@ -6,9 +6,13 @@
         xmlns:local="clr-namespace:WpfChat"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid Background="#FF8383D1">
-        <Button Content="Button" HorizontalAlignment="Left" Margin="371,309,0,0" VerticalAlignment="Top" Height="31" Width="130" Click="btnVerzenden_click"/>
-        <TextBlock x:Name="tekstBox" Background="White" HorizontalAlignment="Left" Margin="62,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="184" Width="440" RenderTransformOrigin="0.5,0.5" Foreground="#FFB51E1E">
+    <Grid Background="#FF76CAD9">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="201*"/>
+            <RowDefinition Height="233*"/>
+        </Grid.RowDefinitions>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="378,127,0,0" VerticalAlignment="Top"VerticalAlignment="Top" Height="39" Width="162" Click="btnVerzenden_click" Grid.Row="1"/>
+        <TextBlock x:Name="tekstBox" Background="White" HorizontalAlignment="Left" Margin="101,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="184" Width="440" RenderTransformOrigin="0.5,0.5" Foreground="#FFB51E1E" Grid.RowSpan="2">
             <TextBlock.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -18,7 +22,7 @@
                 </TransformGroup>
             </TextBlock.RenderTransform>
         </TextBlock>
-        <TextBox x:Name="txtNaam" HorizontalAlignment="Left" Margin="61,54,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="445" RenderTransformOrigin="0.5,0.5" Height="45" TextChanged="text_block_naam__TextChanged">
+        <TextBox x:Name="txtNaam" HorizontalAlignment="Left" Margin="98,54,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="445" RenderTransformOrigin="0.5,0.5" Height="45" TextChanged="text_block_naam__TextChanged">
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -28,8 +32,8 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <TextBlock x:Name="chatVenster" Background="White" HorizontalAlignment="Left" Margin="571,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="282" Width="206"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="-55,175,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="chatVenster" Background="White" HorizontalAlignment="Left" Margin="571,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="282" Width="206" Grid.RowSpan="2"/>
+        <Label Content="Naam" HorizontalAlignment="Left" Margin="26,61,0,0" VerticalAlignment="Top" FontSize="22"/>
 
     </Grid>
 </Window>

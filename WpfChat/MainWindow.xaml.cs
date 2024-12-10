@@ -29,7 +29,7 @@ namespace WpfChat
         private void btnVerzenden_click(object sender, RoutedEventArgs e)
         {
             string voornaam = txtNaam.Text; 
-            string bericht = tekstbox;
+            string bericht = teksBox.Text;
             string chat = chatVenster.Text;
             chat = $"voornaam says:{Environment.NewLine}"; 
 
