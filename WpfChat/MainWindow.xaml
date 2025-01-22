@@ -1,0 +1,39 @@
+﻿<Window x:Class="WpfChat.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfChat"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#FF76CAD9">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="201*"/>
+            <RowDefinition Height="233*"/>
+        </Grid.RowDefinitions>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="378,127,0,0" VerticalAlignment="Top"VerticalAlignment="Top" Height="39" Width="162" Click="btnVerzenden_click" Grid.Row="1"/>
+        <TextBlock x:Name="tekstBox" Background="White" HorizontalAlignment="Left" Margin="101,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="184" Width="440" RenderTransformOrigin="0.5,0.5" Foreground="#FFB51E1E" Grid.RowSpan="2">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.128"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBox x:Name="txtNaam" HorizontalAlignment="Left" Margin="98,54,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="445" RenderTransformOrigin="0.5,0.5" Height="45" TextChanged="text_block_naam__TextChanged">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.315"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBlock x:Name="chatVenster" Background="White" HorizontalAlignment="Left" Margin="571,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="282" Width="206" Grid.RowSpan="2"/>
+        <Label Content="Naam" HorizontalAlignment="Left" Margin="26,61,0,0" VerticalAlignment="Top" FontSize="22"/>
+
+    </Grid>
+</Window>
